@@ -42,11 +42,6 @@ rotate(data, 12478) // => [3, 4, 5, 1, 2]
 */
 
 function rotate(array, n) {
-  const rotatedArr=array.slice()
-  const ind=((n % array.length) + array.length) % array.length;
-  for (let i = 0; i < array.length; i++) {
-    rotatedArr[(ind+i)%array.length]=array[i]
- 
-  }
-  return rotatedArr
+  n = n % array.length
+  return array.slice(-n).concat(array.slice(0, -n))
 }
