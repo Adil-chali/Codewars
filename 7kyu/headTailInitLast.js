@@ -28,3 +28,15 @@
 // tail([1,2,3,4,5]); => [2,3,4,5]
 
 // Most tests consist of 100 randomly generated arrays, each with four tests, one for each operation. There are 400 tests overall. No empty arrays will be given. Haskell has QuickCheck tests   
+function head(arr){
+ return arr[0]
+}
+function tail(arr){
+ return arr.slice(1)
+}
+function init(arr){
+ return arr.slice(0,arr.length-1)
+}
+function last(arr){
+ return arr[arr.length-1]
+}
