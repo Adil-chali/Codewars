@@ -16,3 +16,7 @@ etc.
 Input may be any positive or negative integer (including 0).
 
 You can assume that all inputs are valid integers. */
+function roundToNext5(n){
+  let remind=((n % 5) + 5) % 5
+  return remind==0?n:n+(5-remind)
+}
